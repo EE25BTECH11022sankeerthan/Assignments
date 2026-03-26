@@ -42,7 +42,7 @@ E\brak{T^2 \bar{X}^2}.
 \end{frame}
 
 
-\begin{frame}{Method Used}
+\begin{frame}{Solution}
 \begin{itemize}
 \item $\bar{X}$ measures the  $\brak{mean}$
 \item $T$ measures the $\brak{variance}$
@@ -195,7 +195,7 @@ plt.hist(values, bins=30, color='skyblue', edgecolor='black', alpha=0.7)
 offset = 0.1
 
 # Theoretical line (red)
-plt.axvline(theoretical_value, color='red', linestyle='-', linewidth=3,
+plt.axvline(theoretical_value, color='red', linestyle='--', linewidth=3,
             label=f'Theoretical = {theoretical_value:.2f}')
 
 # Estimated line (blue, slightly shifted)
@@ -213,6 +213,7 @@ plt.text(estimated_value + offset, 140000, f"{estimated_value:.2f}", color='blue
 # Better scaling
 plt.xlim(0, 45)
 plt.ylim(0, None)
+
 plt.title("Distribution of E[T^2 * Xbar^2]")
 plt.xlabel("Value")
 plt.ylabel("Frequency")

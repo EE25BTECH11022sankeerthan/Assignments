@@ -7,6 +7,7 @@ plt.text(estimated_value + offset, 140000, f"{estimated_value:.2f}", color='blue
 # Better scaling
 plt.xlim(0, 45)
 plt.ylim(0, None)
+
 plt.title("Distribution of E[T^2 * Xbar^2]")
 plt.xlabel("Value")
 plt.ylabel("Frequency")
