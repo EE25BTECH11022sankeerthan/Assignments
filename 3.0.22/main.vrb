@@ -1,0 +1,16 @@
+\frametitle{Python-Code}
+\begin{lstlisting}
+#  Add text labels near lines
+plt.text(theoretical_value, 150000, "4.8", color='red', ha='center')
+plt.text(estimated_value + offset, 140000, f"{estimated_value:.2f}", color='blue', ha='center')
+
+# Better scaling
+plt.xlim(0, 45)
+plt.ylim(0, None)
+plt.title("Distribution of E[T^2 * Xbar^2]")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.legend()
+plt.grid()
+plt.show()
+\end{lstlisting}
